@@ -19,6 +19,7 @@ inquirer.prompt([
  
 	console.log('Listing torrents..');
 
+	// todo fixe machinepack package, typo on exits line 52
 	UTorrent.listTorrents({
 		host: 'localhost',
 		port: 8080,
@@ -27,12 +28,14 @@ inquirer.prompt([
 	}).exec({
 	 // An unexpected error occurred.
 	 error: function (err){
-	  console.error(err);
+ 		  console.error(err);
 	 },
 	 // OK.
 	 success: function (torrents){
-	  console.log(torrents);
+    		  console.log(torrents);
 	 },
 	});
+	
+	
 
 });
