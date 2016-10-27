@@ -1,0 +1,28 @@
+{
+  "name": "utorrent-console",
+  "version": "0.1.0",
+  "description": "Manage your uTorrent from console",
+  "scripts": {
+    "test": "echo \"No test yet specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/geco/utorrent-console.git"
+  },
+  "keywords": [
+    "torrent",
+    "utorrent",
+    "inquirer",
+    "console"
+  ],
+  "author": "geco (https://github.com/geco)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/geco/utorrent-console/issues"
+  },
+  "homepage": "https://github.com/geco/utorrent-console#readme",
+  "dependencies": {
+    "inquirer": "^1.2.2",
+    "machinepack-utorrent": "^0.1.2"
+  }
+}
