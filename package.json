@@ -1,6 +1,6 @@
 {
   "name": "utorrent-console",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Manage your uTorrent from console",
   "scripts": {
     "test": "echo \"No test yet specified\" && exit 1"
