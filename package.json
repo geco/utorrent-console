@@ -1,6 +1,6 @@
 {
   "name": "utorrent-console",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Manage your uTorrent from console",
   "scripts": {
     "test": "echo \"No test yet specified\" && exit 1"
@@ -23,6 +23,6 @@
   "homepage": "https://github.com/geco/utorrent-console#readme",
   "dependencies": {
     "inquirer": "^1.2.2",
-    "machinepack-utorrent": "^0.1.2"
+    "library-utorrent": "^0.1.4"
   }
 }

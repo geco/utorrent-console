@@ -1,13 +1,21 @@
-'use strict';
-
-var inquirer = require('inquirer');
-var UTorrent = require('machinepack-utorrent');
+const inquirer = require('inquirer')
+const actions = require('./lib/actions')
 
 inquirer.prompt([
   {
     type: 'input',
-    name: 'user',
-    message: 'Enter yout utorrent web gui username',
+    name: 'host',
+    message: 'Enter your utorrent web host',
+    default: function() {return 'localhost';}
+  },  {
+    type: 'input',
+    name: 'port',
+    message: 'Enter your utorrent web gui port',
+    default: function() {return 8080;}
+  },  {
+    type: 'input',
+    name: 'username',
+    message: 'Enter your utorrent web gui username',
     default: function() {return 'admin';}
   },  {
     type: 'password',
@@ -15,27 +23,9 @@ inquirer.prompt([
     name: 'password',
     default: function() {return '';}
   }
-]).then(function (answers) {
- 
-	console.log('Listing torrents..');
-
-	// todo fixe machinepack package, typo on exits line 52
-	UTorrent.listTorrents({
-		host: 'localhost',
-		port: 8080,
-		username: answers.user,
-		password: answers.password,
-	}).exec({
-	 // An unexpected error occurred.
-	 error: function (err){
- 		  console.error(err);
-	 },
-	 // OK.
-	 success: function (torrents){
-    		  console.log(torrents);
-	 },
-	});
-	
-	
-
-});
+]).then((answers) => actions({
+    host: answers.host,
+    port: answers.port,
+    password: answers.password,
+    username: answers.username
+}));

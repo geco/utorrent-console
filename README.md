@@ -4,10 +4,14 @@ Finally manage your [uTorrent](http://www.utorrent.com/) from console with [Node
 Work in progress.. contributions welcome!
 
 ## Installation
-From your console execute `npm install`.
+```sh
+$ npm install
+```
 
 ## Run
-From your console execute `npm start`.
+```sh
+$ npm start
+```
 
 
 ## License
