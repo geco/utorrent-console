@@ -1,5 +1,5 @@
 const inquirer = require('inquirer')
-const actions = require('./lib/actions')
+const manager = require('./lib/manager')
 
 inquirer.prompt([
   {
@@ -23,7 +23,7 @@ inquirer.prompt([
     name: 'password',
     default: function() {return '';}
   }
-]).then((answers) => actions({
+]).then((answers) => manager({
     host: answers.host,
     port: answers.port,
     password: answers.password,
