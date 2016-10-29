@@ -1,5 +1,5 @@
 const inquirer = require('inquirer')
-const manager = require('./lib/manager')
+const manager = require('../lib/manager')
 
 inquirer.prompt([
   {
