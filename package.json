@@ -1,6 +1,6 @@
 {
   "name": "utorrent-console",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "Manage your uTorrent from console",
   "main": "./bin/utorrent-console",
   "scripts": {
@@ -30,7 +30,7 @@
     "library-utorrent": "^0.1.4"
   },
   "bin": {
-    "utorrent-console": "./bin/utorrent-console",
-    "utconsole": "./bin/utorrent-console"
+    "utorrent-console": "./bin/utorrent-console.js",
+    "utconsole": "./bin/utorrent-console.js"
   }
 }
