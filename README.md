@@ -3,6 +3,18 @@ Finally manage your [uTorrent](http://www.utorrent.com/) from console with [Node
 
 Work in progress.. contributions welcome!
 
+#### Currently provided features:
+- List torrents
+
+#### WIP (Work in progress) features:
+- Complete list torrents fields
+- Add torrent
+- Delete torrent
+- Torrent details and chart
+- Autorefresh torrent list
+- Redux state management
+- Securely store and re-use credentials
+
 ## Installation
 If you are using nvm:
 ```sh
