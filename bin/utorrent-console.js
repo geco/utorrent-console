@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-const inquirer = require('inquirer')
+var inquirer = require('inquirer')
 const manager = require('../lib/manager')
 
 inquirer.prompt([
@@ -25,9 +25,16 @@ inquirer.prompt([
     name: 'password',
     default: function() {return '';}
   }
-]).then((answers) => manager({
+]).then((answers) => {
+  // cleanup inquirer input handling
+  inquirer = null;
+  [process.stdin, process.stdout, process.stderr].every(s => s.removeAllListeners());
+
+  // launch the main manager
+  manager({
     host: answers.host,
     port: answers.port,
     password: answers.password,
     username: answers.username
-}));
+  })
+});
