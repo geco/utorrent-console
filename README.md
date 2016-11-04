@@ -10,7 +10,6 @@ Work in progress.. contributions welcome!
 - Add torrent
 - Delete torrent
 - Torrent details and chart
-- Autorefresh torrent list
 - Securely store and re-use credentials
 
 ## Installation
