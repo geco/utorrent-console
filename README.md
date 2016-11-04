@@ -1,16 +1,15 @@
 # uTorrent Console
 Finally manage your [uTorrent](http://www.utorrent.com/) from console with [Node.js](https://nodejs.org).
 
-Work in progress.. contributions welcome!
-
-#### Currently provided features:
+#### Features:
 - List torrents __realtime__ (size, progress, speed, eta, seeds/peers, availability and so on)
 
-#### WIP (Work in progress) features:
-- Add torrent
+##### Coming soon:
+- Add torrent/magnet
 - Delete torrent
 - Torrent details and chart
-- Securely store and re-use credentials
+- Save (encrypted) credentials
+- (__new__) Manage uTorrent settings
 
 ## Installation
 If you are using nvm:

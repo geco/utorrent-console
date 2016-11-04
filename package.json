@@ -1,6 +1,6 @@
 {
   "name": "utorrent-console",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "description": "Manage your uTorrent from console",
   "main": "./bin/utorrent-console",
   "scripts": {
@@ -14,9 +14,11 @@
   "keywords": [
     "torrent",
     "utorrent",
-    "inquirer",
+    "magnet",
     "console",
-    "bash"
+    "bash",
+    "ncurses",
+    "linux"
   ],
   "author": "geco (https://github.com/geco)",
   "license": "MIT",
