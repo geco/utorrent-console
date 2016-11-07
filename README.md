@@ -1,15 +1,16 @@
 # uTorrent Console
-Finally manage your [uTorrent](http://www.utorrent.com/) from console with [Node.js](https://nodejs.org).
+Finally manage your __<a href="http://www.utorrent.com/" title="uTorrent" target="_blank">uTorrent</a>__ from console thanks to __<a href="https://nodejs.org" title="Node.js" target="_blank">Node.js</a>__.
 
 #### Features:
-- List torrents __realtime__ (size, progress, speed, eta, seeds/peers, availability and so on)
+- Monitor torrents __realtime__ (size, progress, speed, eta, seeds/peers, availability and so on)
+- View uTorrent settings
 
 ##### Coming soon:
 - Add torrent/magnet
 - Delete torrent
 - Torrent details and chart
 - Save (encrypted) credentials
-- (__new__) Manage uTorrent settings
+- (__new__) Edit uTorrent settings
 
 ## Installation
 If you are using nvm:
@@ -41,7 +42,13 @@ $ git clone https://github.com/geco/utorrent-console.git
 $ npm install
 $ npm start
 ```
+#### Example API outputs:
+- <a href="https://github.com/geco/utorrent-console/blob/master/outputs/getSettings.json" target="_blank">Get uTorrent settings</a>
+
+
+## About
+This package uses the __<a href="https://github.com/geco/library-utorrent" title="uTorrent library" target="_blank">uTorrent Node.js Library</a>__, based on the __<a href="http://help.utorrent.com/customer/portal/topics/664593/articles" title="uTorrent Web API" target="_blank">uTorrent Web API</a>__.
 
 
 ## License
-MIT
+MIT &copy; 2016
