@@ -1,5 +1,7 @@
 # uTorrent Console
-Finally manage your __<a href="http://www.utorrent.com/" title="uTorrent" target="_blank">uTorrent</a>__ from console thanks to __<a href="https://nodejs.org" title="Node.js" target="_blank">Node.js</a>__.
+Finally manage your __<a href="http://www.utorrent.com/" title="uTorrent" target="_blank">uTorrent</a>__ from __console__ thanks to __<a href="https://nodejs.org" title="Node.js" target="_blank">Node.js</a>__.
+<br>Why? Because uTorrent is the best torrent server in the world and thanks to this package it can be managed from the Linux Console.
+
 
 #### Features:
 - Monitor torrents __realtime__ (size, progress, speed, eta, seeds/peers, availability and so on)
@@ -13,6 +15,14 @@ Finally manage your __<a href="http://www.utorrent.com/" title="uTorrent" target
 - (__new__) Edit uTorrent settings
 
 ## Installation
+Download right package from <a href="http://www.utorrent.com/intl/en/downloads/linux" title="uTorrent downloads page" target="_blank">uTorrent downloads page</a>.<br>Decompress the archive in a folder of your choice:
+```sh
+tar zxvf utserver.tar.gz
+```
+Launch uTorrent server:
+```sh
+./utserver &
+```
 If you are using nvm:
 ```sh
 $ npm install -g utorrent-console
@@ -21,7 +31,15 @@ Otherwise:
 ```sh
 $ sudo npm install -g utorrent-console
 ```
-
+## Update (to latest version)
+If you are using nvm:
+```sh
+$ npm update -g utorrent-console
+```
+Otherwise:
+```sh
+$ sudo npm update -g utorrent-console
+```
 ## Run
 ```sh
 $ utconsole
