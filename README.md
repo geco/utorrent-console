@@ -6,6 +6,9 @@ Finally manage your __<a href="http://www.utorrent.com/" title="uTorrent" target
 #### Features:
 - Monitor torrents __realtime__ (size, progress, speed, eta, seeds/peers, availability and so on)
 - View uTorrent settings
+- Start torrent
+- Force start torrent
+- Stop torrent
 
 ##### Coming soon:
 - Add torrent/magnet
