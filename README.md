@@ -4,36 +4,47 @@ Finally manage your __<a href="http://www.utorrent.com/" title="uTorrent" target
 
 
 #### Features:
-- Monitor torrents __realtime__ (size, progress, speed, eta, seeds/peers, availability and so on)
+- __Monitor torrents realtime__ (size, progress, speed, eta, seeds/peers, availability and so on)
+- __Add torrent from URL__
 - View uTorrent settings
 - Start torrent
 - Force start torrent
 - Stop torrent
 
 ##### Coming soon:
-- Add torrent/magnet
+- Add magnet
 - Delete torrent
 - Torrent details and chart
 - Save (encrypted) credentials
-- (__new__) Edit uTorrent settings
+- Edit uTorrent settings
 
 ## Installation
-Download right package from <a href="http://www.utorrent.com/intl/en/downloads/linux" title="uTorrent downloads page" target="_blank">uTorrent downloads page</a>.<br>Decompress the archive in a folder of your choice:
+If you already have installed uTorrent server you can jump to step 3.
+1. Download right package from <a href="http://www.utorrent.com/intl/en/downloads/linux" title="uTorrent downloads page" target="_blank">uTorrent downloads page</a>.
+2. Decompress the archive in a folder of your choice:
 ```sh
 tar zxvf utserver.tar.gz
 ```
-Launch uTorrent server:
+Launch uTorrent server in background:
 ```sh
+cd your-folder
 ./utserver &
 ```
-If you are using nvm:
+3. Install utorrent-console
+  - If you are using nvm (Node Version Manager):
 ```sh
 $ npm install -g utorrent-console
 ```
-Otherwise:
+  - Otherwise:
 ```sh
 $ sudo npm install -g utorrent-console
 ```
+4. Run utorrent-console:
+```sh
+$ utconsole
+```
+5. Enjoy!
+
 ## Update (to latest version)
 If you are using nvm:
 ```sh
@@ -42,10 +53,6 @@ $ npm update -g utorrent-console
 Otherwise:
 ```sh
 $ sudo npm update -g utorrent-console
-```
-## Run
-```sh
-$ utconsole
 ```
 ### FAQ
 1. Why doesn't the Linux console render __lines__ correctly on __Ubuntu__?
@@ -56,6 +63,8 @@ $ utconsole
   $ export TERM="linux"
   ```
   - Otherwise, to automate it, in the Putty config options, under Connection->Data there is a setting called "Terminal-type string". You can set your TERM there to "linux" and putty instructs SSH to set that environment variable
+3. How can I paste from clipboard?
+  - If your favorite keyboard/mouse shortcut doesn't work, try SHIFT+INS
 
 ## Contribute (developers)
 ```sh
