@@ -19,7 +19,8 @@ Finally manage your __<a href="http://www.utorrent.com/" title="uTorrent" target
 - Edit uTorrent settings
 
 ## Installation
-If you already have installed uTorrent server you can jump to step 3.
+If you already have installed uTorrent server you can jump to step 3.<br>
+
 1. Download right package from <a href="http://www.utorrent.com/intl/en/downloads/linux" title="uTorrent downloads page" target="_blank">uTorrent downloads page</a>.
 2. Decompress the archive in a folder of your choice:
 ```sh
@@ -32,13 +33,13 @@ cd your-folder
 ```
 3. Install utorrent-console
   - If you are using nvm (Node Version Manager):
-```sh
-$ npm install -g utorrent-console
-```
+  ```sh
+  $ npm install -g utorrent-console
+  ```
   - Otherwise:
-```sh
-$ sudo npm install -g utorrent-console
-```
+  ```sh
+  $ sudo npm install -g utorrent-console
+  ```
 4. Run utorrent-console:
 ```sh
 $ utconsole
