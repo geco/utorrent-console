@@ -30,7 +30,7 @@
     "blessed": "^0.1.81",
     "blessed-contrib": "^3.5.5",
     "inquirer": "^1.2.2",
-    "library-utorrent": "^0.2.3",
+    "library-utorrent": "^0.3.0",
     "numeral": "^1.5.3",
     "request": "^2.78.0"
   },
