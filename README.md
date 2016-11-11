@@ -32,13 +32,13 @@ $ ./utserver &
 ```
 - __Install utorrent-console__
   - If you are using nvm (Node Version Manager):
-```sh
-$ npm install -g utorrent-console
-```
+  ```sh
+  $ npm install -g utorrent-console
+  ```
   - Otherwise:
-```sh
-$ sudo npm install -g utorrent-console
-```
+  ```sh
+  $ sudo npm install -g utorrent-console
+  ```
 - Run utorrent-console:
 ```sh
 $ utconsole
