@@ -5,46 +5,45 @@ Finally manage your __<a href="http://www.utorrent.com/" title="uTorrent" target
 
 #### Features:
 - Monitor torrents realtime (size, progress, speed, eta, seeds/peers, availability and so on)
-- Add torrent from URL
+- Add Torrent from URL
+- Add Magnet Link
 - Delete torrent (and data)
 - View uTorrent settings
-- Start torrent
-- Force start torrent
+- Start (force) torrent
 - Stop torrent
 
 ##### Coming soon:
-- Add magnet
 - Torrent details and chart
 - Save (encrypted) credentials
 - Edit uTorrent settings
 
 ## Installation
-If you already have installed uTorrent server you can jump to step 3.<br>
+If you already have installed uTorrent server you can jump to step "Install utorrent-console".<br>
 
-1. Download right package from <a href="http://www.utorrent.com/intl/en/downloads/linux" title="uTorrent downloads page" target="_blank">uTorrent downloads page</a>.
-2. Decompress the archive in a folder of your choice:
-  ```sh
-  tar zxvf utserver.tar.gz
-  ```
-  Launch uTorrent server in background:
-  ```sh
-  cd your-folder
-  ./utserver &
-  ```
-3. Install utorrent-console
+- Download right package from <a href="http://www.utorrent.com/intl/en/downloads/linux" title="uTorrent downloads page" target="_blank">uTorrent downloads page</a>.
+- Decompress the archive in a folder of your choice:
+```sh
+$ tar zxvf utserver.tar.gz
+```
+Launch uTorrent server in background:
+```sh
+$ cd your-folder
+$ ./utserver &
+```
+- __Install utorrent-console__
   - If you are using nvm (Node Version Manager):
-    ```sh
-    $ npm install -g utorrent-console
-    ```
+```sh
+$ npm install -g utorrent-console
+```
   - Otherwise:
-    ```sh
-    $ sudo npm install -g utorrent-console
-    ```
-4. Run utorrent-console:
-  ```sh
-  $ utconsole
-  ```
-5. Enjoy!
+```sh
+$ sudo npm install -g utorrent-console
+```
+- Run utorrent-console:
+```sh
+$ utconsole
+```
+- Enjoy!
 
 ## Update (to latest version)
 - If you are using nvm:
