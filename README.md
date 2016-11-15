@@ -2,9 +2,13 @@
 Finally manage your __<a href="http://www.utorrent.com/" title="uTorrent" target="_blank">uTorrent</a>__ from __console__ thanks to __<a href="https://nodejs.org" title="Node.js" target="_blank">Node.js</a>__.
 <br>Why? Because uTorrent is the best torrent server in the world and thanks to this package it can be managed from the Linux Console.
 
+![utorrent-console](https://raw.githubusercontent.com/utorrent-console/master/img/screenshot.jpg)
+
+
 
 #### Features:
 - Monitor torrents realtime (size, progress, speed, eta, seeds/peers, availability and so on)
+- Torrent trasfer rate chart (download and upload)
 - Add Torrent from URL
 - Add Magnet Link
 - Delete torrent (and data)
@@ -13,8 +17,8 @@ Finally manage your __<a href="http://www.utorrent.com/" title="uTorrent" target
 - Stop torrent
 
 ##### Coming soon:
-- Torrent details and chart
-- Save (encrypted) credentials
+- Torrent contents file list
+- Save and re-use credentials (encrypted)
 - Edit uTorrent settings
 
 ## Installation
