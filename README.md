@@ -15,10 +15,10 @@ Finally manage your __<a href="http://www.utorrent.com/" title="uTorrent" target
 - View uTorrent settings
 - Start (force) torrent
 - Stop torrent
+- Securely store credentials
 
 ##### Coming soon:
 - Torrent contents file list
-- Save and re-use credentials (encrypted)
 - Edit uTorrent settings
 
 ## Installation
