@@ -16,9 +16,9 @@ Finally manage your __<a href="http://www.utorrent.com/" title="uTorrent" target
 - Start (force) torrent
 - Stop torrent
 - Securely store credentials
+- List torrent contents
 
 ##### Coming soon:
-- Torrent contents file list
 - Edit uTorrent settings
 
 ## Installation
