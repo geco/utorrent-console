@@ -17,6 +17,7 @@ Finally manage your __<a href="http://www.utorrent.com/" title="uTorrent" target
 - Stop torrent
 - Securely store credentials
 - List torrent contents
+- Total download/upload realtime speed and limits on title bar
 
 ##### Coming soon:
 - Edit uTorrent settings
