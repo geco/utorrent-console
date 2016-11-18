@@ -38,3 +38,6 @@ jspm_packages
 
 # Encrypted credentials
 credentials.json
+
+# Comments
+todo_dev.txt

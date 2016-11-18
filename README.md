@@ -18,9 +18,7 @@ Finally manage your __<a href="http://www.utorrent.com/" title="uTorrent" target
 - Securely store credentials
 - List torrent contents
 - Total download/upload realtime speed and limits on title bar
-
-##### Coming soon:
-- Edit uTorrent settings
+- Edit uTorrent settings (download/upload limits, max active downloads/torrents, folders, connections per torrent/global)
 
 ## Installation
 If you already have installed uTorrent server you can jump to step "Install utorrent-console".<br>
