@@ -1,6 +1,6 @@
 {
   "name": "utorrent-console",
-  "version": "1.2.0",
+  "version": "1.4.0",
   "description": "Manage your uTorrent from console",
   "main": "./bin/utorrent-console",
   "scripts": {
