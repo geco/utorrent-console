@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>uTorrent Console by geco</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">uTorrent Console</h1>
+      <h2 class="project-tagline">Manage your uTorrent from console</h2>
+      <a href="https://github.com/geco/utorrent-console" class="btn">View on GitHub</a>
+      <a href="https://github.com/geco/utorrent-console/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/geco/utorrent-console/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="utorrent-console" class="anchor" href="#utorrent-console" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>uTorrent Console</h1>
+
+<p>Finally manage your <strong><a href="http://www.utorrent.com/" title="uTorrent">uTorrent</a></strong> from <strong>console</strong> thanks to <strong><a href="https://nodejs.org" title="Node.js">Node.js</a></strong>.
+<br>Why? Because uTorrent is the best torrent server in the world and thanks to this package it can be managed from the Linux Console.</p>
+
+<p><img src="https://raw.githubusercontent.com/geco/utorrent-console/master/img/screenshot.png" alt="utorrent-console"></p>
+
+<h4>
+<a id="features" class="anchor" href="#features" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Features:</h4>
+
+<ul>
+<li>Monitor torrents realtime (size, progress, speed, eta, seeds/peers, availability and so on)</li>
+<li>Torrent trasfer rate chart (download and upload)</li>
+<li>Add Torrent from URL</li>
+<li>Add Magnet Link</li>
+<li>Delete torrent (and data)</li>
+<li>View uTorrent settings</li>
+<li>Start (force) torrent</li>
+<li>Stop torrent</li>
+<li>Securely store credentials</li>
+<li>List torrent contents</li>
+<li>Total download/upload realtime speed and limits on title bar</li>
+<li>Edit uTorrent settings (download/upload limits, max active downloads/torrents, folders, connections per torrent/global)</li>
+<li>Auto-shrink too long magnet urls to avoid problems with uTorrent web api</li>
+</ul>
+
+<h2>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installation</h2>
+
+<p>If you already have installed uTorrent server you can jump to step "Install utorrent-console".<br></p>
+
+<ul>
+<li>Download right package from <a href="http://www.utorrent.com/intl/en/downloads/linux" title="uTorrent downloads page">uTorrent downloads page</a>.</li>
+<li>Decompress the archive in a folder of your choice:</li>
+</ul>
+
+<div class="highlight highlight-source-shell"><pre>$ tar zxvf utserver.tar.gz</pre></div>
+
+<p>Launch uTorrent server in background:</p>
+
+<div class="highlight highlight-source-shell"><pre>$ <span class="pl-c1">cd</span> your-folder
+$ ./utserver <span class="pl-k">&amp;</span></pre></div>
+
+<ul>
+<li>
+<strong>Install utorrent-console</strong>
+
+<ul>
+<li>If you are using nvm (Node Version Manager):</li>
+</ul>
+
+<div class="highlight highlight-source-shell"><pre>$ npm install -g utorrent-console</pre></div>
+
+<ul>
+<li>Otherwise:</li>
+</ul>
+
+<div class="highlight highlight-source-shell"><pre>$ sudo npm install -g utorrent-console</pre></div>
+</li>
+<li>Run utorrent-console:</li>
+</ul>
+
+<div class="highlight highlight-source-shell"><pre>$ utconsole</pre></div>
+
+<ul>
+<li>Enjoy!</li>
+</ul>
+
+<h2>
+<a id="update-to-latest-version" class="anchor" href="#update-to-latest-version" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Update (to latest version)</h2>
+
+<ul>
+<li>If you are using nvm:</li>
+</ul>
+
+<div class="highlight highlight-source-shell"><pre>$ npm update -g utorrent-console</pre></div>
+
+<ul>
+<li>Otherwise:</li>
+</ul>
+
+<div class="highlight highlight-source-shell"><pre>$ sudo npm update -g utorrent-console</pre></div>
+
+<h3>
+<a id="faq" class="anchor" href="#faq" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>FAQ</h3>
+
+<ol>
+<li>Why doesn't the Linux console render <strong>lines</strong> correctly on <strong>Ubuntu</strong>?
+
+<ul>
+<li>You need to install the <code>ncurses-base</code> package and the <code>ncurses-term</code> package</li>
+</ul>
+</li>
+<li>Why doesn't the Linux console render <strong>lines</strong> correctly through <strong>Putty</strong>?
+
+<ul>
+<li>After loggin in, you need to set the environment variable TERM to "linux":</li>
+</ul>
+
+<div class="highlight highlight-source-shell"><pre>$ <span class="pl-k">export</span> TERM=<span class="pl-s"><span class="pl-pds">"</span>linux<span class="pl-pds">"</span></span></pre></div>
+
+<ul>
+<li>Otherwise, to automate it, in the Putty config options, under Connection-&gt;Data there is a setting called "Terminal-type string". You can set your TERM there to "linux" and putty instructs SSH to set that environment variable</li>
+</ul>
+</li>
+<li>How can I paste from clipboard?
+
+<ul>
+<li>If your favorite keyboard/mouse shortcut doesn't work, try SHIFT+INS</li>
+</ul>
+</li>
+</ol>
+
+<h2>
+<a id="contribute-developers" class="anchor" href="#contribute-developers" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Contribute (developers)</h2>
+
+<div class="highlight highlight-source-shell"><pre>$ git clone https://github.com/geco/utorrent-console.git
+$ npm install
+$ npm start</pre></div>
+
+<h4>
+<a id="example-api-outputs" class="anchor" href="#example-api-outputs" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Example API outputs:</h4>
+
+<ul>
+<li><a href="https://github.com/geco/utorrent-console/blob/master/outputs/getSettings.json">Get uTorrent settings</a></li>
+</ul>
+
+<h2>
+<a id="about" class="anchor" href="#about" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>About</h2>
+
+<p>This package uses the <strong><a href="https://github.com/geco/library-utorrent" title="uTorrent library">uTorrent Node.js Library</a></strong>, based on the <strong><a href="http://help.utorrent.com/customer/portal/topics/664593/articles" title="uTorrent Web API">uTorrent Web API</a></strong>.</p>
+
+<h2>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>License</h2>
+
+<p>MIT © 2016</p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/geco/utorrent-console">uTorrent Console</a> is maintained by <a href="https://github.com/geco">geco</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
